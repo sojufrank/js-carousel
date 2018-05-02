@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>title</title>
+  <link rel="stylesheet" href="carousel.css">
+</head>
+
+<body>
+
+
+  <div class="c">
+
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-item" id="carousel-item-1"></div>
+        <div class="carousel-item"></div>
+        <div class="carousel-item"></div>
+        <div class="carousel-item"></div>
+        <div class="carousel-item"></div>
+        <div class="carousel-item"></div>
+      </div>
+      <div class="buttons">
+        <button class="carousel-prev">PREV</button>
+        <button class="carousel-next">NEXT</button>
+      </div>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>
+
+<style>
+</style>
+<script src="carousel.js"></script>
+<script>
+  const elem = document.querySelectorAll('.carousel-item')
+  let color = ['#E91E63', '#3F51B5', '#00BCD4', '#8BC34A', '#FFC107', '#607D8B']
+
+  for (let i = 0; i < elem.length; i++) {
+    const c = color.shift()
+    elem[i].style.background = c
+    color.push(c)
+  }
+</script>

@@ -1,0 +1,47 @@
+.c {
+  margin-top: 100px;
+}
+
+.carousel-container {
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel-container, .carousel-item {
+  /*
+    set the width
+    height is set automatically via js dynamically depending on width
+  */
+  width: 250px;
+}
+
+.carousel {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.carousel-item {
+  position: absolute;
+  background-size: contain;
+  border-radius: 10px;
+  opacity: .9;
+}
+
+.buttons {
+  margin-top: 25%;
+}
+
+.carousel-next, .carousel-prev {
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .buttons {
+    margin-top: 40%;
+  }
+}
